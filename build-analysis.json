@@ -1,0 +1,170 @@
+[
+  {
+    "deviceType": "mobile",
+    "dirPath": "dist-mobile",
+    "totalSize": 820,
+    "jsFiles": [
+      {
+        "name": "vendor-CtAxSNQ8.js",
+        "size": 136
+      },
+      {
+        "name": "vue-vendor-D9iKZYeW.js",
+        "size": 116
+      },
+      {
+        "name": "vant-DzLmt1UE.js",
+        "size": 30
+      },
+      {
+        "name": "index-DrMLEmC2.js",
+        "size": 5
+      },
+      {
+        "name": "utils-K1T4obDk.js",
+        "size": 4
+      },
+      {
+        "name": "ui-desktop-Chu0s9MA.js",
+        "size": 0
+      },
+      {
+        "name": "ui-mobile-BdwjjwgJ.js",
+        "size": 0
+      }
+    ],
+    "cssFiles": [
+      {
+        "name": "index-C-qHqn1C.css",
+        "size": 3
+      },
+      {
+        "name": "vant-7RwGzIuI.css",
+        "size": 195
+      },
+      {
+        "name": "vendor-BOwJVbhv.css",
+        "size": 327
+      },
+      {
+        "name": "vue-vendor-CUtVViym.css",
+        "size": 4
+      }
+    ],
+    "chunks": {
+      "utils": 4,
+      "vant": 30,
+      "vendor": 136,
+      "vueVendor": 116
+    }
+  },
+  {
+    "deviceType": "desktop",
+    "dirPath": "dist-desktop",
+    "totalSize": 820,
+    "jsFiles": [
+      {
+        "name": "vue-vendor-BoLBfspv.js",
+        "size": 116
+      },
+      {
+        "name": "vendor-CgQAobjl.js",
+        "size": 92
+      },
+      {
+        "name": "element-plus-AEJXE14B.js",
+        "size": 74
+      },
+      {
+        "name": "index-Bt47gAl7.js",
+        "size": 5
+      },
+      {
+        "name": "utils-CjJgKVvZ.js",
+        "size": 4
+      },
+      {
+        "name": "ui-desktop-B3OfxVdf.js",
+        "size": 0
+      },
+      {
+        "name": "ui-mobile-C2thszEZ.js",
+        "size": 0
+      }
+    ],
+    "cssFiles": [
+      {
+        "name": "element-plus-BOwJVbhv.css",
+        "size": 327
+      },
+      {
+        "name": "index-C-qHqn1C.css",
+        "size": 3
+      },
+      {
+        "name": "vendor-7RwGzIuI.css",
+        "size": 195
+      },
+      {
+        "name": "vue-vendor-CUtVViym.css",
+        "size": 4
+      }
+    ],
+    "chunks": {
+      "elementPlus": 74,
+      "utils": 4,
+      "vendor": 92,
+      "vueVendor": 116
+    }
+  },
+  {
+    "deviceType": "auto",
+    "dirPath": "dist",
+    "totalSize": 1119,
+    "jsFiles": [
+      {
+        "name": "index-BulLcwQS.js",
+        "size": 450
+      },
+      {
+        "name": "index-Bp2ZEfPF.js",
+        "size": 104
+      },
+      {
+        "name": "index-CvL10rRm.js",
+        "size": 31
+      },
+      {
+        "name": "HomeView-uWs5mue8.js",
+        "size": 4
+      },
+      {
+        "name": "HomeView-NyB9watK.js",
+        "size": 2
+      }
+    ],
+    "cssFiles": [
+      {
+        "name": "HomeView-CwjOgzEf.css",
+        "size": 1
+      },
+      {
+        "name": "HomeView-kM8ORKE1.css",
+        "size": 1
+      },
+      {
+        "name": "index-7RwGzIuI.css",
+        "size": 195
+      },
+      {
+        "name": "index-BOwJVbhv.css",
+        "size": 327
+      },
+      {
+        "name": "index-DaIPADTE.css",
+        "size": 4
+      }
+    ],
+    "chunks": {}
+  }
+]
