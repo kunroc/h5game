@@ -18,7 +18,7 @@ export async function setupDesktopUI(app: App) {
     })
 
     // 设置全局标识
-    ;(window as any).ElementPlus = ElementPlus
+    ;(window as unknown as { ElementPlus: typeof ElementPlus }).ElementPlus = ElementPlus
     
     console.log('🖥️ Element Plus组件库已加载')
   } catch (error) {

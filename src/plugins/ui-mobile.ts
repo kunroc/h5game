@@ -171,7 +171,7 @@ export async function setupMobileUI(app: App) {
     app.config.globalProperties.$imagePreview = ImagePreview
 
     // 设置全局标识
-    ;(window as any).vant = {
+    ;(window as unknown as { vant: { Toast: typeof Toast; Dialog: typeof Dialog; Notify: typeof Notify; Loading: typeof Loading; ImagePreview: typeof ImagePreview } }).vant = {
       Toast,
       Dialog,
       Notify,

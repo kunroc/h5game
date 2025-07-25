@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
+    "check": "npm run type-check && npm run lint-check",
+    "type-check": "tsc --noEmit",
     "lint": "eslint . --fix",
+    "lint-check": "eslint .",
     "format": "prettier --write src/"
   },
   "dependencies": {

@@ -57,7 +57,7 @@ export const isMobileDevice = (): boolean => {
 
 // 监听设备类型变化并重新加载页面
 export const watchDeviceTypeChange = () => {
-  let currentDeviceType = getDeviceType()
+  const currentDeviceType = getDeviceType()
   
   const handleResize = () => {
     const newDeviceType = getDeviceType()

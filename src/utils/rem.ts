@@ -8,12 +8,14 @@ import { getDeviceType } from './device'
 // 设计稿基准
 const DESIGN_WIDTH = {
   mobile: 375, // 移动端设计稿宽度
+  tablet: 768, // 平板端设计稿宽度
   desktop: 1920 // PC端设计稿宽度
 }
 
 // 基准字体大小
 const BASE_FONT_SIZE = {
   mobile: 16, // 移动端基准字体大小
+  tablet: 16, // 平板端基准字体大小
   desktop: 16 // PC端基准字体大小
 }
 
@@ -31,6 +33,11 @@ export function setRootFontSize(): void {
     fontSize = (clientWidth / DESIGN_WIDTH.mobile) * BASE_FONT_SIZE.mobile
     // 限制字体大小范围
     fontSize = Math.max(12, Math.min(fontSize, 24))
+  } else if (deviceType === 'tablet') {
+    // 平板端：根据屏幕宽度动态计算
+    fontSize = (clientWidth / DESIGN_WIDTH.tablet) * BASE_FONT_SIZE.tablet
+    // 平板端字体大小限制
+    fontSize = Math.max(14, Math.min(fontSize, 22))
   } else {
     // PC端：根据屏幕宽度动态计算，但有最小和最大限制
     fontSize = (clientWidth / DESIGN_WIDTH.desktop) * BASE_FONT_SIZE.desktop
