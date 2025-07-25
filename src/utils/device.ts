@@ -30,6 +30,20 @@ export const useDevice = () => {
 
 // 获取设备类型
 export const getDeviceType = (): 'mobile' | 'tablet' | 'desktop' => {
+  // 优先使用User-Agent检测真实设备类型
+  const userAgent = navigator.userAgent.toLowerCase()
+  
+  // 检测移动设备
+  if (/android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(userAgent)) {
+    return 'mobile'
+  }
+  
+  // 检测平板设备
+  if (/ipad|tablet|(android(?!.*mobile))/i.test(userAgent)) {
+    return 'tablet'
+  }
+  
+  // 如果User-Agent检测不出来，则使用屏幕宽度作为备选方案
   const width = window.innerWidth
   if (width < 768) return 'mobile'
   if (width < 1024) return 'tablet'

@@ -1,25 +1,39 @@
 // Less 全局变量文件
 
-// 主题色彩
+// 主题色
 @primary-color: #1890ff;
+@color-primary: #1890ff;
 @success-color: #52c41a;
+@color-success: #52c41a;
+@color-success-light: #b7eb8f;
 @warning-color: #faad14;
+@color-warning: #faad14;
 @error-color: #f5222d;
+@color-error: #f5222d;
 @info-color: #1890ff;
 
 // 文字颜色
 @text-color: #000000d9;
+@text-color-primary: #000000d9;
 @text-color-secondary: #00000073;
 @text-color-inverse: #ffffff;
+@text-color-disabled: #999999;  // 新增
 @disabled-color: #00000040;
+@text-color-placeholder: #cccccc;
 
 // 背景色
 @background-color-light: #fafafa;
 @background-color-base: #f5f5f5;
 @component-background: #ffffff;
+@bg-color: #ffffff;
+@bg-color-light: #fafafa;
+@bg-color-base: #f5f5f5;
+@bg-color-container: #ffffff;
+@bg-color-disabled: #f5f5f5;
 
 // 边框
 @border-color-base: #d9d9d9;
+@border-color-light: #e8e8e8;
 @border-color-split: #f0f0f0;
 @border-radius-base: 6px;
 @border-width-base: 1px;
@@ -37,9 +51,17 @@
 @margin-xs: 8px;
 @margin-xss: 4px;
 
+@spacing-xl: 32px;
+@spacing-lg: 24px;
+@spacing-md: 16px;
+@spacing-sm: 12px;
+@spacing-xs: 8px;
+@spacing-xss: 4px;
+
 // 字体大小
 @font-size-base: 14px;
 @font-size-lg: 16px;
+@font-size-md: 15px;  // 新增
 @font-size-sm: 12px;
 @font-size-xl: 20px;
 @font-size-xxl: 24px;
@@ -60,3 +82,32 @@
 
 // 移动端适配
 @mobile-max-width: @screen-md - 1px;
+@mobile-safe-bottom: 20px;
+@mobile-spacing-xl: 32px;
+@mobile-spacing-lg: 20px;
+@mobile-spacing-md: 16px;
+@mobile-spacing-sm: 12px;
+@mobile-spacing-xs: 8px;
+@mobile-spacing-xss: 4px;
+@mobile-border-radius: 8px;
+@mobile-border-radius-sm: 4px;
+@mobile-font-size-lg: 18px;
+@mobile-font-size-base: 14px;
+@mobile-font-size-sm: 12px;
+@mobile-font-xxl: 24px;
+@mobile-font-xl: 20px;
+@mobile-font-lg: 18px;
+@mobile-font-md: 16px;
+@mobile-font-base: 14px;
+@mobile-font-sm: 12px;
+@mobile-font-xs: 10px;
+
+// 移动端行高
+@mobile-line-height: 1.5;
+@mobile-line-height-lg: 1.6;
+@mobile-line-height-sm: 1.4;
+
+// 移动端颜色
+@mobile-text-color: @text-color;
+@mobile-text-color-secondary: @text-color-secondary;
+@mobile-background-color: @component-background;
